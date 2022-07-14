@@ -30,4 +30,11 @@ class QueryProcessorTest {
 		}
 	}
 
+
+	@Test
+	void isNotCaseSensitive2() {
+		assertThat(queryProcessor.process(query: "name"), containsString(substring: "Ezgi"))
+	}
+
+
 }
