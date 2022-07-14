@@ -14,7 +14,7 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
             return "Ezgi";
         } else if (query.contains("plus")) {
-            const array = query.split(" ");
+            String[] array = query.split(" ");
             return Integer.parseInt(array[3]) + Integer.parseInt(array[5]);
         } else { // TODO extend the programm here
             return "";
