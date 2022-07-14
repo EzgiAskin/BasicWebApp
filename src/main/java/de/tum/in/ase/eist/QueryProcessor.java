@@ -15,7 +15,7 @@ public class QueryProcessor {
             return "Ezgi";
         } else if (query.contains("plus")) {
             String[] array = query.split(" ");
-            return Integer.parseInt(array[3]) + Integer.parseInt(array[5]);
+            return String.valueOf(Integer.valueOf(array[3]) + Integer.valueOf(array[5]));
         } else { // TODO extend the programm here
             return "";
 
