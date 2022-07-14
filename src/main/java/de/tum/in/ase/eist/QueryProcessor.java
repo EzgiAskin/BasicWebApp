@@ -6,17 +6,17 @@ import org.springframework.stereotype.Service;
 public class QueryProcessor {
 
     public String process(String query) {
-		query = query.toLowerCase();
+        query = query.toLowerCase();
         if (query.contains("shakespeare")) {
             return "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
-           return "Ezgi";
-        } else if (query.contains("1 plus 9")) {
-            return "10";
-        }
-        else { // TODO extend the programm here
+            return "Ezgi";
+        } else if (query.contains("plus")) {
+            const array = query.split(" ");
+            return Integer.parseInt(array[3]) + Integer.parseInt(array[5]);
+        } else { // TODO extend the programm here
             return "";
 
         }
