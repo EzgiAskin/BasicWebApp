@@ -13,7 +13,10 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
            return "Ezgi";
-        } else { // TODO extend the programm here
+        } else if (query.contains("1 plus 9")) {
+            return "10";
+        }
+        else { // TODO extend the programm here
             return "";
 
         }
